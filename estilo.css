@@ -26,6 +26,12 @@
                 padding-left: 00px;
             }
 
+            .fotoropa {
+                width: 650px;
+                height: 320px;
+                max-width: 100%;
+            }
+
             button {
                 padding: 4px 20px;
                 background-color: #af095e;;
