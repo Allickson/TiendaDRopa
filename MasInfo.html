@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Registro de Dueño</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="estilo.css">
+  
+        <script>
+            function ingresar() {
+                var nombre = document.getElementById("nombre").value;
+                var email = document.getElementById("email").value;
+                var telefono = document.getElementById("telefono").value;
+                var comuna = document.getElementById("comuna").value;
+
+
+                if (nombre.trim().length < 3 || !isNaN(nombre.trim())) {
+                    document.getElementById("Resultado").textContent =
+                        "Ingrese un nombre valido (ej: Juan López)";
+                    return;
+                }
+
+                if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/.test(email.trim())) {
+                    document.getElementById("Resultado").textContent =
+                        "Ingrese un email valido (ej: juan@gmail.com)";
+                    return;
+                }
+        
+                if (!/^[0-9]{9}$/.test(telefono.trim())) {
+                    document.getElementById("Resultado").textContent =
+                        "Ingrese un telefono valido de 9 digitos (ej: 987654321)";
+                    return;
+                }
+
+                if (comuna.trim().length < 3 || !isNaN(comuna.trim())) {
+                    document.getElementById("Resultado").textContent =
+                        "Ingrese una comuna valida (ej: Maipú)";
+                    return;
+                }
+
+          
+                console.log("-- datos del cliente --");
+                console.log("nombre = " + nombre);
+                console.log("email = " + email);
+                console.log("telefono = " + telefono);
+                console.log("comuna = " + comuna);
+
+                document.getElementById("Resultado").textContent =
+                    "Dueño " + nombre + " ingresado correctamente.";
+            }
+        </script>
+
+    </head>
+    <body style="color: #af095e;">
+        <nav>
+            <ul>
+                <li><a href="./Index.html">Volver al catalogo</a></li>   
+            </ul>
+        </nav>
+        <main>
+            <center><img src="logo.png" alt="logo" class="logo" style="width: 200px; height: 200px;"></center>
+            <center><h3>¡Bienvenido a nuestro formulario para más informacion!</h3></center>
+            <div class="jumbotron text-center">
+                <p>
+                    Aquí puedes encontrar un formulario para obtener mas informacion desde tu correo, recuerda llenar bien tus datos!
+                    <br>
+                    <br>
+                </p>
+            </div>
+            <div id="contenedor_formulario">
+                <form id="form_dueno">
+                    <fieldset>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Ej: Juan López">
+                        <br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="Ej: juan@gmail.com">
+                        <br>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" placeholder="Ej: 987654321">
+                        <br>
+                        <label for="comuna">Comuna:</label>
+                        <input type="text" id="comuna" placeholder="Ej: Maipú">
+                        <br>
+                        <button type="button" id="btn_ingresar" onclick="ingresar()">
+                            Ingresar
+                        </button>
+                        <div id="Resultado"></div>
+                    </fieldset>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
