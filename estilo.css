@@ -1,0 +1,140 @@
+            body {
+                background-color: rgba(255, 214, 252, 0.229);
+                font-family: "Questrial", sans-serif;
+                font-weight: 400;
+                font-style: normal;
+            }
+            #titulo_principal{
+              background-color: #ffb7f54b;
+            }
+            table {
+              border-collapse: collapse; 
+              width: 100%;
+              color: #7909838b;
+            }
+            th, td {
+              border: 1px solid rgb(205, 141, 211); 
+              padding: 8px; 
+              text-align: left;
+            }
+
+            .titulo-catalogo {
+                padding-left: 80px;
+            }
+
+            .titulo-ubicacion {
+                padding-left: 00px;
+            }
+
+            button {
+                padding: 4px 20px;
+                background-color: #af095e;;
+                color: white;
+            }
+
+            fieldset {
+                border: 2px solid #7909838b;
+                border-radius: 8px;
+                padding: 30px;
+                width: fit-content;
+                min-width: 400px;
+                margin: 20px auto;   /* esto solo ya lo centra */
+                font-size: 1.15rem;
+            }
+            legend {
+                font-weight: bold;
+                padding: 0 10px;
+            }
+
+            input {
+                margin-bottom: 20px;  /* sube esto si ya tenías 12px, dale más aire vertical */
+            }
+
+            /*
+            voy cambiar como se ve la lista de links
+            */
+
+            nav ul{
+                list-style: none;
+                display: flex;
+                justify-content: flex-end;
+                background-color: #af095e;
+                
+            }
+
+            nav li{
+                display:inline; /* omite los cortes de linea */
+                margin-right: 10px; /* deja un espacio */
+                font-family: Helvetica, sans-serif;
+            }
+
+            /* cambia el color del link al pasar el mouse */
+            nav a:hover{
+                color:rgb(227, 160, 217); 
+            }
+
+            nav a{
+                text-decoration: none;
+                color: white;
+            }
+
+            /*Responsiva */
+            @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding: 10px 0;
+            }
+
+            nav li {
+                margin-right: 0;
+            }
+
+            .titulo-catalogo {
+                padding-left: 20px;
+                font-size: 1.3rem;
+                text-align: center;
+            }
+
+            .titulo-ubicacion {
+                text-align: center;
+                font-size: 1.3rem;
+            }
+
+            .polera, .pantalon, .poleron, .falda, .sueter, .blusa {
+                width: 100%;
+                height: auto;
+            }
+
+            .fotoropa {
+                width: 100%;
+                height: auto;
+            }
+
+            .logo {
+                width: 140px;
+                height: 140px;
+            }
+
+            video {
+                height: auto;
+            }
+
+            fieldset {
+                min-width: unset;
+                width: 90%;
+                padding: 15px;
+                font-size: 1rem;
+            }
+
+            input {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
