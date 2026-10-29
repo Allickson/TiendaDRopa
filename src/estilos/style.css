@@ -197,3 +197,22 @@ h1, h2, h3, h4, h5 {
 .footer-tienda {
     margin-top: auto !important;
 }
+
+.hero-pinkie {
+    background: repeating-linear-gradient(
+        90deg,
+        var(--pinkie-rosa) 0 24px,
+        var(--pinkie-crema) 24px 48px
+    );
+    border-radius: 0.5rem;
+}
+
+.hero-logo {
+    width: 260px;
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-light {
+    --bs-btn-color: var(--pinkie-rosa-fuerte);
+}

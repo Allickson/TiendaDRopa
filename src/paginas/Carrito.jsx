@@ -44,7 +44,10 @@ export default function Carrito({ carrito, onCambiarCantidad, onEliminar }) {
           </tbody>
         </table>
       </div>
-      <h4 className="text-end">Total: ${calcularTotal(carrito).toLocaleString('es-CL')}</h4>
+        <div className="d-flex justify-content-end align-items-center gap-3">
+          <h4 className="mb-0">Total: ${calcularTotal(carrito).toLocaleString('es-CL')}</h4>
+          <Link to="/comprar" className="btn btn-primary">Ir a pagar</Link>
+        </div>
     </div>
   )
 }

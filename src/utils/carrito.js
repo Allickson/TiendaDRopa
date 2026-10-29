@@ -25,3 +25,17 @@ export function calcularTotal(carrito) {
 export function contarItems(carrito) {
   return carrito.reduce((suma, item) => suma + item.cantidad, 0)
 }
+
+export function hayStock(carrito, productos) {
+  return carrito.every(item => {
+    const producto = productos.find(p => p.id === item.id)
+    return Boolean(producto) && producto.stock >= item.cantidad
+  })
+}
+
+export function descontarStock(productos, carrito) {
+  return productos.map(p => {
+    const item = carrito.find(i => i.id === p.id)
+    return item ? { ...p, stock: p.stock - item.cantidad } : p
+  })
+}
