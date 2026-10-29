@@ -1,0 +1,133 @@
+-------------------|---------|----------|---------|---------|-------------------
+File               | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------|---------|----------|---------|---------|-------------------
+All files          |   99.25 |    94.75 |   99.02 |   99.33 |                   
+ app               |     100 |      100 |     100 |     100 |                   
+  not-found.tsx    |     100 |      100 |     100 |     100 |                   
+ app/(tienda)      |     100 |      100 |     100 |     100 |                   
+  layout.tsx       |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ app/(tienda)/blog |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...nda)/blog/[id] |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...ienda)/carrito |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...da)/categorias |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...orias/[nombre] |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...ienda)/comprar |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...error/[numero] |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...ar/ok/[numero] |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...enda)/contacto |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...)/crear-cuenta |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...iniciar-sesion |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...enda)/nosotros |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...ienda)/ofertas |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ .../producto/[id] |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...nda)/productos |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ app/admin         |     100 |      100 |     100 |     100 |                   
+  layout.tsx       |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...min/categorias |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ app/admin/ordenes |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...denes/[numero] |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ app/admin/perfil  |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...dmin/productos |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...os/[id]/editar |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...uctos/criticos |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...roductos/nuevo |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...admin/reportes |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...admin/usuarios |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...usuarios/[run] |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...s/[run]/editar |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ ...usuarios/nuevo |     100 |      100 |     100 |     100 |                   
+  page.tsx         |     100 |      100 |     100 |     100 |                   
+ componentes       |   98.18 |    94.02 |   96.42 |   98.18 |                   
+  AdminSidebar.tsx |     100 |      100 |     100 |     100 |                   
+  ...rapClient.tsx |     100 |      100 |     100 |     100 |                   
+  ...ormulario.tsx |     100 |      100 |     100 |     100 |                   
+  ...goriaCard.tsx |     100 |       75 |     100 |     100 | 10                
+  Footer.tsx       |     100 |      100 |     100 |     100 |                   
+  ...Productos.tsx |     100 |      100 |     100 |     100 |                   
+  NavLink.tsx      |     100 |      100 |     100 |     100 |                   
+  Navbar.tsx       |   88.88 |    77.77 |      80 |   88.88 | 29                
+  ProductCard.tsx  |     100 |      100 |     100 |     100 |                   
+  ResumenOrden.tsx |     100 |      100 |     100 |     100 |                   
+  RutaAdmin.tsx    |     100 |      100 |     100 |     100 |                   
+  TablaItems.tsx   |     100 |      100 |     100 |     100 |                   
+  ...taResumen.tsx |     100 |    66.66 |     100 |     100 | 2                 
+  TiendaLayout.tsx |     100 |      100 |     100 |     100 |                   
+ context           |   98.33 |    91.66 |     100 |   98.03 |                   
+  ...daContext.tsx |   98.33 |    91.66 |     100 |   98.03 | 78                
+ data              |     100 |      100 |     100 |     100 |                   
+  blog.ts          |     100 |      100 |     100 |     100 |                   
+  productos.ts     |     100 |      100 |     100 |     100 |                   
+  regiones.ts      |     100 |      100 |     100 |     100 |                   
+ hooks             |     100 |      100 |     100 |     100 |                   
+  ...calStorage.ts |     100 |      100 |     100 |     100 |                   
+ paginas           |     100 |    98.87 |   98.18 |     100 |                   
+  Blog.tsx         |     100 |      100 |     100 |     100 |                   
+  BlogDetalle.tsx  |     100 |      100 |     100 |     100 |                   
+  Carrito.tsx      |     100 |      100 |   83.33 |     100 |                   
+  Categorias.tsx   |     100 |      100 |     100 |     100 |                   
+  CompraError.tsx  |     100 |      100 |     100 |     100 |                   
+  CompraOk.tsx     |     100 |      100 |     100 |     100 |                   
+  Comprar.tsx      |     100 |       96 |     100 |     100 | 59                
+  Contacto.tsx     |     100 |      100 |     100 |     100 |                   
+  CrearCuenta.tsx  |     100 |      100 |     100 |     100 |                   
+  ...eProducto.tsx |     100 |      100 |     100 |     100 |                   
+  Home.tsx         |     100 |      100 |     100 |     100 |                   
+  ...iarSesion.tsx |     100 |      100 |     100 |     100 |                   
+  NoEncontrado.tsx |     100 |      100 |     100 |     100 |                   
+  Nosotros.tsx     |     100 |      100 |     100 |     100 |                   
+  Ofertas.tsx      |     100 |      100 |     100 |     100 |                   
+  Productos.tsx    |     100 |      100 |     100 |     100 |                   
+ paginas/admin     |     100 |    95.96 |     100 |     100 |                   
+  AdminBoleta.tsx  |     100 |       75 |     100 |     100 | 22                
+  ...ategorias.tsx |     100 |      100 |     100 |     100 |                   
+  ...nCriticos.tsx |     100 |      100 |     100 |     100 |                   
+  ...Dashboard.tsx |     100 |      100 |     100 |     100 |                   
+  AdminLayout.tsx  |     100 |      100 |     100 |     100 |                   
+  AdminOrdenes.tsx |     100 |      100 |     100 |     100 |                   
+  AdminPerfil.tsx  |     100 |    84.61 |     100 |     100 | 14,34             
+  ...ductoForm.tsx |     100 |    95.45 |     100 |     100 | 27                
+  ...Productos.tsx |     100 |      100 |     100 |     100 |                   
+  ...nReportes.tsx |     100 |      100 |     100 |     100 |                   
+  ...ioDetalle.tsx |     100 |      100 |     100 |     100 |                   
+  ...uarioForm.tsx |     100 |    97.29 |     100 |     100 | 51                
+  ...nUsuarios.tsx |     100 |      100 |     100 |     100 |                   
+ tipos             |       0 |        0 |       0 |       0 |                   
+  index.ts         |       0 |        0 |       0 |       0 |                   
+ utils             |   98.27 |    91.78 |   98.95 |   98.51 |                   
+  carrito.ts       |     100 |    94.73 |     100 |     100 | 8                 
+  categorias.ts    |     100 |      100 |     100 |     100 |                   
+  formato.ts       |     100 |      100 |     100 |     100 |                   
+  ordenes.ts       |     100 |     87.5 |     100 |     100 | 3                 
+  productos.ts     |   89.65 |    85.71 |   93.75 |   90.47 | 21,25             
+  usuarios.ts      |     100 |    94.28 |     100 |     100 | 34,46             
+  validaciones.ts  |     100 |    91.66 |     100 |     100 | 33,50             
+-------------------|---------|----------|---------|---------|-------------------

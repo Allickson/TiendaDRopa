@@ -187,8 +187,8 @@ h1, h2, h3, h4, h5 {
     object-fit: cover;    /* recorta la foto en vez de deformarla */
 }
 
-/* Footer siempre abajo */
-#root {
+/* Footer siempre abajo (en Next el contenedor de la app es el body) */
+body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -216,3 +216,79 @@ h1, h2, h3, h4, h5 {
 .btn-light {
     --bs-btn-color: var(--pinkie-rosa-fuerte);
 }
+/* ====== Agregados entrega 2 ====== */
+main { display: block; }
+
+.card-producto { position: relative; }
+
+.miniatura {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.categoria-img,
+.card-producto .categoria-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.categoria-img-vacia {
+    background: repeating-linear-gradient(45deg, var(--pinkie-rosa) 0 10px, var(--pinkie-crema) 10px 20px);
+}
+
+.blog-img { height: 200px; object-fit: cover; }
+.blog-img-detalle { width: 100%; max-height: 360px; object-fit: cover; }
+
+.total-orden {
+    background: #fff;
+    border: 1px solid var(--pinkie-rosa);
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+}
+
+/* Panel admin: barra lateral en escritorio, menú horizontal desplazable en móvil */
+.admin-sidebar {
+    background-color: #fff;
+    border-bottom: 1px solid var(--pinkie-rosa);
+}
+
+@media (min-width: 768px) {
+    .admin-sidebar {
+        min-height: 100vh;
+        border-bottom: 0;
+        border-right: 1px solid var(--pinkie-rosa);
+        position: sticky;
+        top: 0;
+    }
+}
+
+.admin-sidebar .nav-link { color: var(--pinkie-texto); }
+
+.admin-sidebar .nav-link.active {
+    background-color: var(--pinkie-rosa-fuerte);
+    color: var(--pinkie-crema);
+}
+
+.progress-bar { background-color: var(--pinkie-rosa-fuerte); }
+
+/* Boleta imprimible */
+@media print {
+    .navbar-tienda, .footer-tienda, .admin-sidebar, .no-imprimir { display: none !important; }
+}
+
+.buscador-navbar .form-control { min-width: 0; }
+@media (min-width: 1200px) {
+    .buscador-navbar .form-control { width: 110px; }
+    .navbar-tienda .nav-compacta .nav-link { padding-left: 0.45rem; padding-right: 0.45rem; }
+}
+
+/* Insignias y tarjetas "primary" con la paleta de la tienda */
+.text-bg-primary {
+    background-color: var(--pinkie-rosa-fuerte) !important;
+    color: var(--pinkie-crema) !important;
+}
+
+.form-select { border-color: var(--pinkie-rosa); }

@@ -1,0 +1,15 @@
+{
+  // Configuración solo para las pruebas: agrega los tipos de Jasmine.
+  // Están fuera del tsconfig principal para que `next build` no las revise.
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "types": ["jasmine", "node"],
+    "paths": {
+      "@/*": ["../*"],
+      "next/navigation": ["./mocks/next-navigation.ts"],
+      "next/link": ["./mocks/next-link.tsx"]
+    }
+  },
+  "include": ["./**/*.ts", "./**/*.tsx", "../**/*.ts", "../**/*.tsx"],
+  "exclude": []
+}
