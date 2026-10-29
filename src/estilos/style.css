@@ -1,0 +1,199 @@
+/* ====== Paleta Pinkie ====== */
+:root {
+    --pinkie-rosa-fuerte: #b84c65;   /* principal */
+    --pinkie-rosa-fuerte-osc: #9a3d54; /* hover / activo (derivado) */
+    --pinkie-rosa: #fcc0c5;          /* acento suave */
+    --pinkie-crema: #fcfef1;         /* fondo */
+    --pinkie-texto: #3d1c25;         /* texto principal (derivado, buen contraste) */
+
+    --bs-body-bg: var(--pinkie-crema);
+    --bs-body-color: var(--pinkie-texto);
+    --bs-link-color: var(--pinkie-rosa-fuerte);
+    --bs-link-hover-color: var(--pinkie-rosa-fuerte-osc);
+    --bs-link-color-rgb: 184, 76, 101;
+    --bs-link-hover-color-rgb: 154, 61, 84;
+    --bs-border-color: var(--pinkie-rosa);
+}
+
+body {
+    background-color: var(--pinkie-crema);
+    color: var(--pinkie-texto);
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--pinkie-rosa-fuerte);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.link-none {
+    text-decoration: none;
+    color: var(--pinkie-texto);
+}
+
+.link-none:hover {
+    text-decoration: none;
+    color: var(--pinkie-rosa-fuerte);
+}
+
+.precio-descuento {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.precio-nuevo {
+    color: var(--pinkie-rosa-fuerte);
+    font-size: 1.4rem;
+}
+
+/* Tarjetas de producto */
+.card-producto {
+    --bs-card-bg: #fff;
+    --bs-card-border-color: var(--pinkie-rosa);
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-producto:hover {
+    border-color: var(--pinkie-rosa-fuerte);
+    box-shadow: 0 4px 10px rgba(184, 76, 101, 0.25);
+    cursor: pointer;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+    color: #6c757d;
+    padding: 0 8px;
+}
+
+.breadcrumb-item + .breadcrumb-item:last-child::before {
+    content: ">";
+    color: #6c757d;
+    padding: 0 8px;
+}
+
+/* Navbar y footer */
+.navbar-tienda {
+    position: relative;
+    background-color: var(--pinkie-rosa-fuerte);
+    margin-bottom: 10px;
+}
+
+/* Franja de rayas rosa/crema, como el fondo del logo */
+.navbar-tienda::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 10px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--pinkie-rosa) 0 20px,
+        var(--pinkie-crema) 20px 40px
+    );
+}
+
+.navbar-tienda .nav-link {
+    color: var(--pinkie-crema);
+}
+
+.navbar-tienda .nav-link:hover,
+.navbar-tienda .nav-link:focus {
+    color: var(--pinkie-rosa);
+}
+
+.navbar-tienda .nav-link.active {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: var(--pinkie-rosa);
+    text-underline-offset: 6px;
+}
+
+.footer-tienda {
+    background-color: var(--pinkie-rosa-fuerte);
+    color: var(--pinkie-crema);
+}
+
+/* Botones */
+.btn-primary {
+    --bs-btn-color: var(--pinkie-crema);
+    --bs-btn-bg: var(--pinkie-rosa-fuerte);
+    --bs-btn-border-color: var(--pinkie-rosa-fuerte);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--pinkie-rosa-fuerte-osc);
+    --bs-btn-hover-border-color: var(--pinkie-rosa-fuerte-osc);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--pinkie-rosa-fuerte-osc);
+    --bs-btn-active-border-color: var(--pinkie-rosa-fuerte-osc);
+    --bs-btn-focus-shadow-rgb: 184, 76, 101;
+}
+
+.btn-outline-secondary {
+    --bs-btn-color: var(--pinkie-rosa-fuerte);
+    --bs-btn-border-color: var(--pinkie-rosa-fuerte);
+    --bs-btn-hover-color: var(--pinkie-crema);
+    --bs-btn-hover-bg: var(--pinkie-rosa-fuerte);
+    --bs-btn-hover-border-color: var(--pinkie-rosa-fuerte);
+    --bs-btn-active-color: var(--pinkie-crema);
+    --bs-btn-active-bg: var(--pinkie-rosa-fuerte-osc);
+    --bs-btn-active-border-color: var(--pinkie-rosa-fuerte-osc);
+    --bs-btn-focus-shadow-rgb: 184, 76, 101;
+}
+
+/* Formularios */
+.form-control {
+    background-color: #fff;
+    border-color: var(--pinkie-rosa);
+}
+
+.form-control:focus {
+    border-color: var(--pinkie-rosa-fuerte);
+    box-shadow: 0 0 0 0.25rem rgba(252, 192, 197, 0.6);
+}
+
+/* Tabla del carrito */
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--pinkie-texto);
+    --bs-table-border-color: var(--pinkie-rosa);
+}
+
+.table > thead {
+    --bs-table-bg: var(--pinkie-rosa);
+    --bs-table-color: var(--pinkie-texto);
+}
+
+/* Logo grande sin agrandar la barra */
+.navbar-tienda .navbar-brand {
+    padding: 0;
+}
+
+.navbar-tienda .navbar-brand img {
+    height: 100px;      /* tamaño del logo */
+    margin: -20px 0;    /* resta este espacio a la altura de la barra */
+    position: relative;
+    z-index: 2;
+}
+
+/* Todas las fotos de producto del mismo tamaño */
+.card-producto .card-img-top {
+    width: 100%;
+    height: 280px;        /* altura de las fotos, cámbiala a gusto */
+    object-fit: cover;    /* recorta la foto en vez de deformarla */
+}
+
+/* Footer siempre abajo */
+#root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-tienda {
+    margin-top: auto !important;
+}
